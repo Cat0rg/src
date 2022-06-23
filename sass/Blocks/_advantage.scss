@@ -1,0 +1,40 @@
+.advantage {
+   padding: 69px 0 78px 0;
+   min-height: 470px;
+   &__title {
+      font-size: 30px;
+      font-weight: 700;
+      color: #0d0d0d;
+      text-align: center;
+   }
+   &__wraper {
+      display: flex;
+      margin-top: 65px;
+      justify-content: space-around;
+      align-items: center;
+      img {
+         display: block;
+         margin: 0 auto;
+      }
+   }
+   &__text {
+      width: 250px;
+      text-align: center;
+      h3 {
+         margin-top: 38px;
+         font-size: 18px;
+         font-weight: 700;
+         color: #0d0d0d;
+      }
+      p {
+         margin-top: 26px;
+         font-size: 14px;
+         font-weight: 300;
+         color: #0d0d0d;
+      }
+      span {
+         text-decoration: underline;
+         color: #ff0000;
+      }
+   }
+}

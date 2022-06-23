@@ -1,0 +1,43 @@
+@media (max-width: 768px) {
+   .container {
+      max-width: 720px;
+   }
+   .advantage__wraper {
+      flex-wrap: wrap;
+   }
+}
+@media (max-width: 576px) {
+   .container {
+      max-width: 540px;
+   }
+   .advantage__wraper {
+      flex-wrap: wrap;
+   }
+   .promo {
+      padding: 10px 5px 50px 5px;
+      &__wraper {
+         text-align: end;
+      }
+   }
+   .header {
+      &__logo {
+         img {
+            width: 80%;
+         }
+      }
+      &__number {
+         .button {
+            margin-left: px;
+            width: auto;
+            height: 40px;
+         }
+         a {
+            order: 1;
+            font-size: 16px;
+         }
+      }
+      &__text {
+         display: none;
+      }
+   }
+}
