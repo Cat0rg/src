@@ -40,4 +40,17 @@
          display: none;
       }
    }
+   .catalog__items {
+      margin-left: 50%;
+      transform: translateX(-50%);
+   }
+   .catalog__tab {
+      font-size: 19px;
+      line-height: 1;
+      margin: 0 3px;
+      width: auto;
+      text-transform: none;
+      height: 40px;
+      padding: 4px;
+   }
 }
