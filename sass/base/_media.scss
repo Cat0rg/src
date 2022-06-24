@@ -43,6 +43,7 @@
    .catalog__items {
       margin-left: 50%;
       transform: translateX(-50%);
+      padding: 0;
    }
    .catalog__tab {
       font-size: 19px;
@@ -52,5 +53,8 @@
       text-transform: none;
       height: 40px;
       padding: 4px;
+   }
+   .button__mini {
+      width: 100px;
    }
 }
