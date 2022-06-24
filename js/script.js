@@ -9,6 +9,8 @@ $(document).ready(function () {
                arrows: false,
                slidesToScroll: 1,
                infinite: true,
+               autoplay: true,
+               autoplaySpeed: 2000,
             }
          }
       ]
