@@ -34,4 +34,27 @@
          }
       }
    }
+   .slick-active {
+      button {
+         background-color: black;
+         width: 10px;
+         border-radius: 100%;
+         height: 15px;
+      }
+   }
+}
+.slick-dots {
+   display: flex;
+   list-style-type: none;
+   justify-content: center;
+   li {
+      margin-left: 8px;
+   }
+   button {
+      background-color: white;
+      border-radius: 100%;
+      width: 10px;
+      height: 15px;
+      font-size: 0;
+   }
 }
