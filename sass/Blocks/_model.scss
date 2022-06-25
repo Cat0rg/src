@@ -1,0 +1,47 @@
+.overlay {
+   display: none;
+   position: fixed;
+   background-color: rgba(0, 0, 0, 0.56);
+   height: 100%;
+   width: 100%;
+   top: 0;
+}
+.model {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 380px;
+   min-height: 400px;
+   background-color: #f2f2f2;
+   border-radius: 10px;
+   padding: 38px 37px 40px 42px;
+   &__close {
+      position: absolute;
+      top: 0;
+      right: -40px;
+      color: red;
+      cursor: pointer;
+   }
+   &__subtitle {
+      font-size: 19px;
+      font-weight: 700;
+      color: #0d0d0d;
+      text-align: center;
+   }
+   &__deskr {
+      font-size: 14px;
+      font-weight: 500;
+      color: #0d0d0d;
+      text-align: center;
+   }
+   &__tree {
+      min-height: 140px;
+   }
+}
+
+#first,
+#second,
+#tree {
+   display: none;
+}

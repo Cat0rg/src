@@ -9,7 +9,8 @@ $(document).ready(function () {
                arrows: false,
                slidesToScroll: 1,
                infinite: true,
-               dots: true
+               autoplay: true,
+               autoplaySpeed: 5000
             }
          }
       ]
@@ -34,6 +35,21 @@ $(document).ready(function () {
          e.preventDefault();
          $('.catalog__content').eq(i).toggleClass('catalog__content-active');
          $('.catalog__list').eq(i).toggleClass('catalog__list-active');
+      })
+   });
+
+   //Модельные окна //.fadeOut() -готовая анимация скрыть
+   $('[data-module=first]').on('click', function () {
+      $('.overlay, #first').fadeIn();
+   });
+   $('.model__close').on('click', function () {
+      $('.overlay, #first, #tree, #second').fadeOut();
+   });
+
+   $('.button__mini').each(function (i) {
+      $(this).on('click', function () {
+         $('#second .model__deskr').text($('.catalog__subtitle').eq(i).text());
+         $('.overlay, #second').fadeIn();
       })
    });
 
