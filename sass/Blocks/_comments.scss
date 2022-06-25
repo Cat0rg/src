@@ -1,0 +1,48 @@
+.title {
+   font-size: 30px;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #0d0d0d;
+   text-align: center;
+   width: 100%;
+}
+.comments {
+   padding: 103px 0 71px 0;
+   &__row {
+      margin-top: 70px;
+      display: flex;
+      img {
+         height: 169px;
+      }
+   }
+   &__text {
+      margin-left: 69px;
+      max-width: 660px;
+      &-name {
+         font-size: 18px;
+         font-weight: 700;
+         color: #0d0d0d;
+      }
+      &-counter {
+         font-size: 14px;
+         line-height: 1.2;
+         font-weight: 300;
+         color: #646464;
+      }
+      &-deskr {
+         margin-top: 10px;
+         font-size: 14px;
+         font-weight: 300;
+         color: #646464;
+         p {
+            &:nth-child(1) {
+               margin-top: 19px;
+            }
+            margin-bottom: 15px;
+            &:last-child {
+               margin-bottom: 0;
+            }
+         }
+      }
+   }
+}
