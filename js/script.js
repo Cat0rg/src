@@ -10,7 +10,7 @@ $(document).ready(function () {
                slidesToScroll: 1,
                infinite: true,
                autoplay: true,
-               autoplaySpeed: 5000
+               autoplaySpeed: 5000,
             }
          }
       ]
@@ -52,5 +52,31 @@ $(document).ready(function () {
          $('.overlay, #second').fadeIn();
       })
    });
+
+
+   function validateForm(form) {
+      $(form).validate({
+         rules: {
+            name: "required",
+            phone: "required",
+            email: {
+               required: true,
+               email: true,
+            }
+         },
+         messages: {
+            name: "Введи своё имя!",
+            phone: "Введи свой номер телефона!",
+            email: {
+               required: "Введите свой email",
+               email: "Ваш email введен не правильно",
+            },
+         }
+      });
+   };
+
+   validateForm('#feed-form_one');
+   validateForm('#second form');
+   validateForm('#first form');
 
 });

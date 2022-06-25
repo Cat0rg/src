@@ -11,4 +11,13 @@
       color: #ffffff;
       max-width: 400px;
    }
+   .error {
+      border: 1px solid red;
+   }
+   label.error {
+      color: white;
+      border: none;
+      margin-bottom: 10px;
+      text-align: center;
+   }
 }
