@@ -1,7 +1,7 @@
 .catalog {
    &__row {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-wrap: wrap;
    }
    .title {
@@ -47,15 +47,11 @@
    }
    &__items {
       overflow: hidden;
-      display: none;
       margin-top: 30px;
       width: 300px;
       min-height: 440px;
       border: 2px solid #e8e8e8;
       padding: 20px 20px 26px 20px;
-      &-active {
-         display: block;
-      }
    }
    &__img {
       display: block;
@@ -70,6 +66,7 @@
       text-align: center;
    }
    &__deskr {
+      width: 250px;
       margin-top: 16px;
       font-size: 14px;
       font-weight: 300;
@@ -111,10 +108,10 @@
    &__content {
       width: 50%;
       margin-right: 0px;
-      transition: 5s all;
+      transition: 0.5s all;
       transform: translateX(-100%);
       &-active {
-         margin-right: 20px;
+         margin-right: 30px;
          transform: translateX(0%);
       }
    }
@@ -160,11 +157,17 @@
       }
       width: 50%;
       margin-left: 20px;
-      transition: 5s all;
+      transition: 0.5s all;
       transform: translateX(0%);
       &-active {
          margin-left: 0px;
          transform: translateX(-100%);
+      }
+   }
+   &__second {
+      display: none;
+      &-active {
+         display: block;
       }
    }
 }
